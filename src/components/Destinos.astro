@@ -79,12 +79,12 @@ const destinos = [
 
           <!-- Imagen del destino -->
           <!--
-            Sube tu foto a: public/images/destinos/{slug}.jpg
-            Tamaño recomendado: 600×360px, formato .webp o .jpg
+            Sube tu foto a: public/destinos/{slug}.png
+            Tamaño recomendado: 600×360px, formato .png
           -->
           <div class="relative h-44 overflow-hidden bg-charcoal-600">
             <img
-              src={`/images/destinos/${d.slug}.jpg`}
+              src={`/destinos/${d.slug}.png`}
               alt={`Viaje a ${d.nombre} desde España`}
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               width="600"
