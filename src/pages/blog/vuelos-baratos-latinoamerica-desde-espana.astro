@@ -1,0 +1,156 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
+import WhatsApp from '../../components/WhatsApp.astro';
+
+const whatsappUrl = 'https://wa.me/34600000000?text=Hola%2C%20me%20gustar%C3%ADa%20informaci%C3%B3n%20sobre%20vuelos%20a%20Latinoam%C3%A9rica';
+---
+
+<Layout
+  title="Cómo encontrar vuelos baratos a Latinoamérica desde España — Alevia Travels"
+  description="Guía completa para conseguir los mejores precios en vuelos a Colombia, México, Perú, Argentina y más desde Madrid. Consejos prácticos de nuestra agencia de viajes."
+>
+  <Navbar />
+
+  <main class="pt-20">
+    <!-- Hero del artículo -->
+    <div class="bg-charcoal-700 py-16">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <a href="/blog" class="inline-flex items-center gap-1.5 text-brand-400 hover:text-brand-300 text-sm font-medium mb-8 transition-colors duration-200 cursor-pointer">
+          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
+          </svg>
+          Volver al blog
+        </a>
+
+        <div class="inline-flex items-center gap-2 bg-brand-500/15 border border-brand-500/25 rounded-full px-3 py-1 mb-5">
+          <svg class="w-3.5 h-3.5 text-brand-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/>
+          </svg>
+          <span class="text-brand-300 text-xs font-semibold">Vuelos y precios</span>
+        </div>
+
+        <h1 class="font-heading font-extrabold text-3xl sm:text-4xl text-white leading-tight mb-4">
+          Cómo encontrar vuelos baratos a Latinoamérica desde España
+        </h1>
+        <p class="text-white/60 text-base font-light leading-relaxed mb-6">
+          Guía práctica con los mejores consejos para volar a Colombia, México, Perú, Argentina y más, pagando el precio justo.
+        </p>
+        <div class="flex items-center gap-4 text-white/40 text-sm font-light">
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/>
+            </svg>
+            Abril 2025
+          </span>
+          <span>·</span>
+          <span class="flex items-center gap-1.5">
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            6 min de lectura
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contenido -->
+    <article class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+      <div class="prose prose-lg max-w-none text-charcoal-500 font-light leading-relaxed space-y-8">
+
+        <p class="text-xl text-charcoal-600 font-normal leading-relaxed">
+          Volar desde España a Latinoamérica puede costar desde 350€ hasta más de 1.000€ por persona, dependiendo del destino, la fecha y cómo reserves. Aquí te contamos los trucos que usamos en Alevia Travels para conseguir los mejores precios para nuestros clientes.
+        </p>
+
+        <h2 class="font-heading font-bold text-2xl text-charcoal-700 mt-10 mb-4">1. Reserva con antelación, pero no demasiado</h2>
+        <p>
+          El punto óptimo para reservar un vuelo transatlántico suele estar entre <strong class="font-semibold text-charcoal-700">8 y 12 semanas antes</strong> de la salida. Reservar con menos de 3 semanas dispara los precios, y reservar con más de 6 meses a veces tampoco garantiza el mejor precio porque las aerolíneas aún no han ajustado su tarifa.
+        </p>
+
+        <div class="bg-brand-50 border border-brand-200 rounded-2xl p-6 my-8">
+          <div class="flex gap-3">
+            <svg class="w-5 h-5 text-brand-500 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
+            </svg>
+            <div>
+              <p class="font-semibold text-charcoal-700 text-sm mb-1">Consejo de Alevia Travels</p>
+              <p class="text-charcoal-500 text-sm font-light">Activa alertas de precio en Google Flights para tu ruta. Te notificará cuando el precio baje y podrás reservar en el momento ideal.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="font-heading font-bold text-2xl text-charcoal-700 mt-10 mb-4">2. Vuela en temporada baja</h2>
+        <p>
+          Para la mayoría de destinos latinoamericanos, la temporada baja en cuanto a precios coincide con los meses de <strong class="font-semibold text-charcoal-700">febrero, marzo, octubre y noviembre</strong>. Los meses de verano (julio-agosto) y Navidad son los más caros porque coinciden con las vacaciones escolares en España.
+        </p>
+
+        <ul class="space-y-2 pl-4">
+          {[
+            'Colombia: mejor precio en abril–junio y agosto–octubre',
+            'México: excelentes precios en enero–febrero y septiembre–octubre',
+            'Perú: fuera de Semana Santa y julio, los precios son muy competitivos',
+            'Argentina: los meses europeos de otoño (oct–nov) son perfectos',
+          ].map((item) => (
+            <li class="flex items-start gap-2 text-charcoal-500">
+              <svg class="w-4 h-4 text-brand-500 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+              </svg>
+              {item}
+            </li>
+          ))}
+        </ul>
+
+        <h2 class="font-heading font-bold text-2xl text-charcoal-700 mt-10 mb-4">3. Compara salir desde Madrid o Barcelona</h2>
+        <p>
+          Aunque vivas en otra ciudad, a veces merece la pena coger un AVE o un vuelo interno y salir desde Madrid-Barajas (MAD) o Barcelona-El Prat (BCN). Ambos aeropuertos tienen más conexiones directas y frecuentes a Latinoamérica, lo que suele traducirse en tarifas más bajas.
+        </p>
+
+        <h2 class="font-heading font-bold text-2xl text-charcoal-700 mt-10 mb-4">4. Considera escalas estratégicas</h2>
+        <p>
+          Los vuelos directos son más cómodos, pero una escala inteligente puede ahorrarte entre 100€ y 300€. Los hubs más eficientes para volar a Latinoamérica desde España son <strong class="font-semibold text-charcoal-700">Bogotá, Ciudad de México, Miami y Panamá</strong>.
+        </p>
+
+        <h2 class="font-heading font-bold text-2xl text-charcoal-700 mt-10 mb-4">5. Trabaja con una agencia especializada</h2>
+        <p>
+          Una agencia con experiencia en la ruta España–Latinoamérica tiene acceso a tarifas consolidadas y combinaciones de vuelos que no aparecen en los comparadores online. Además, si hay algún problema durante el viaje, tienes a alguien que te respalda.
+        </p>
+
+      </div>
+
+      <!-- CTA -->
+      <div class="mt-14 bg-charcoal-700 rounded-2xl p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div>
+          <p class="font-heading font-bold text-white text-lg mb-1">¿Quieres que busquemos tu vuelo?</p>
+          <p class="text-white/50 text-sm font-light">Cuéntanos tu destino y fechas. Te buscamos las mejores opciones gratis.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 bg-brand-500 hover:bg-brand-600 text-white font-semibold text-sm px-6 py-3 rounded-xl shadow-brand transition-all duration-200 cursor-pointer"
+          >
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Consultar por WhatsApp
+          </a>
+          <a
+            href="tel:+34600000000"
+            class="inline-flex items-center gap-2 bg-white/10 hover:bg-white/18 border border-white/15 text-white font-semibold text-sm px-6 py-3 rounded-xl transition-all duration-200 cursor-pointer"
+          >
+            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/>
+            </svg>
+            Llamar ahora
+          </a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+  <WhatsApp />
+</Layout>

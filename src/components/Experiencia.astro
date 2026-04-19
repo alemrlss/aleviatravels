@@ -1,0 +1,21 @@
+---
+const stats = [
+  { valor: '500+', etiqueta: 'Viajeros satisfechos' },
+  { valor: '20+', etiqueta: 'Destinos en Latinoamérica' },
+  { valor: '5★', etiqueta: 'Valoración media' },
+  { valor: '24h', etiqueta: 'Respuesta garantizada' },
+];
+---
+
+<section class="py-16 bg-gradient-to-br from-terracota-600 to-terracota-700">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+      {stats.map((stat) => (
+        <div>
+          <div class="font-heading font-extrabold text-4xl sm:text-5xl text-dorado-400 mb-2">{stat.valor}</div>
+          <div class="text-white/80 text-sm font-medium">{stat.etiqueta}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

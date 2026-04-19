@@ -1,0 +1,119 @@
+---
+const testimonios = [
+  {
+    nombre: 'María González',
+    origen: 'Colombiana en Madrid',
+    texto: 'Llevaba 3 años sin volver a Colombia y Alevia Travels me organizó el viaje perfecto. Vuelo, hotel en Cartagena y los tours. Todo impecable y a un precio que no encontré en ningún otro sitio.',
+    estrellas: 5,
+    inicial: 'M',
+    color: 'bg-yellow-500',
+  },
+  {
+    nombre: 'Carlos Rodríguez',
+    origen: 'Mexicano en Barcelona',
+    texto: 'Me asesoraron para llevar a toda mi familia a México. 8 personas, diferentes presupuestos, y lo resolvieron sin problema. Atención excelente por WhatsApp en todo momento.',
+    estrellas: 5,
+    inicial: 'C',
+    color: 'bg-green-600',
+  },
+  {
+    nombre: 'Ana Martínez',
+    origen: 'Venezolana en Valencia',
+    texto: 'Quería un viaje sorpresa para mi pareja a Perú. Machu Picchu, Lima y Cusco. Todo salió perfectamente coordinado. Alevia Travels se encargó de absolutamente todo.',
+    estrellas: 5,
+    inicial: 'A',
+    color: 'bg-brand-500',
+  },
+  {
+    nombre: 'Luis Hernández',
+    origen: 'Peruano en Sevilla',
+    texto: 'Busqué muchas agencias y ninguna me daba la confianza que me dio Alevia. Me respondieron rápido, me explicaron todo y el viaje fue exactamente como me lo prometieron.',
+    estrellas: 5,
+    inicial: 'L',
+    color: 'bg-sky-500',
+  },
+];
+---
+
+<section id="testimonios" class="py-24 bg-warm-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Header -->
+    <div class="text-center max-w-xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 bg-brand-100 rounded-full px-4 py-1.5 mb-5">
+        <svg class="w-4 h-4 text-brand-500" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+        </svg>
+        <span class="text-brand-600 text-sm font-semibold">Testimonios reales</span>
+      </div>
+      <h2 class="font-heading font-extrabold text-display-lg text-charcoal-700 mb-4">
+        Ellos ya viajaron<br/>con nosotros
+      </h2>
+      <p class="text-charcoal-400 text-lg font-light">
+        La mejor garantía es la experiencia de quienes ya confiaron en Alevia Travels.
+      </p>
+    </div>
+
+    <!-- Testimonios grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+      {testimonios.map((t) => (
+        <article class="bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300">
+
+          <!-- Stars + quote icon -->
+          <div class="flex items-start justify-between mb-5">
+            <div class="flex gap-1" aria-label={`${t.estrellas} estrellas de 5`}>
+              {Array.from({ length: t.estrellas }).map(() => (
+                <svg class="w-4 h-4 text-brand-500" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+              ))}
+            </div>
+            <svg class="w-8 h-8 text-brand-100" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M11.192 15.757c0-.88-.23-1.618-.69-2.217-.326-.412-.768-.683-1.327-.812-.55-.128-1.07-.137-1.54-.028-.16-.95.1-1.956.76-3.022.66-1.065 1.515-1.867 2.558-2.403L9.373 5c-.8.396-1.56.898-2.26 1.505-.71.607-1.34 1.305-1.9 2.094s-.98 1.68-1.25 2.69-.346 2.04-.217 3.1c.168 1.4.62 2.52 1.356 3.35.735.84 1.652 1.26 2.748 1.26.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.368l.002-.004zm9.124 0c0-.88-.23-1.618-.69-2.217-.326-.42-.77-.692-1.327-.817-.56-.124-1.074-.13-1.54-.022-.16-.94.09-1.95.75-3.02.66-1.06 1.514-1.86 2.557-2.4L18.49 5c-.8.396-1.555.898-2.26 1.505-.708.607-1.34 1.305-1.894 2.094-.556.79-.97 1.68-1.24 2.69-.273 1-.345 2.04-.217 3.1.168 1.4.62 2.52 1.356 3.35.735.84 1.652 1.26 2.748 1.26.965 0 1.766-.29 2.4-.878.628-.576.94-1.365.94-2.368l.002-.004z"/>
+            </svg>
+          </div>
+
+          <!-- Quote -->
+          <blockquote class="text-charcoal-500 text-sm font-light leading-relaxed mb-6">
+            &ldquo;{t.texto}&rdquo;
+          </blockquote>
+
+          <!-- Author -->
+          <div class="flex items-center gap-3 pt-5 border-t border-gray-100">
+            <div class={`w-10 h-10 ${t.color} rounded-full flex items-center justify-center text-white font-bold text-sm flex-shrink-0`}>
+              {t.inicial}
+            </div>
+            <div>
+              <div class="font-heading font-semibold text-charcoal-700 text-sm">{t.nombre}</div>
+              <div class="text-charcoal-400 text-xs font-light">{t.origen}</div>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <!-- Social proof bar -->
+    <div class="mt-12 flex flex-wrap items-center justify-center gap-8 text-center">
+      <div class="flex items-center gap-2 text-charcoal-400 text-sm font-medium">
+        <svg class="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+        +500 viajeros satisfechos
+      </div>
+      <div class="w-px h-4 bg-gray-300 hidden sm:block"></div>
+      <div class="flex items-center gap-2 text-charcoal-400 text-sm font-medium">
+        <svg class="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"/>
+        </svg>
+        Valoración media 5 estrellas
+      </div>
+      <div class="w-px h-4 bg-gray-300 hidden sm:block"></div>
+      <div class="flex items-center gap-2 text-charcoal-400 text-sm font-medium">
+        <svg class="w-5 h-5 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/>
+        </svg>
+        Clientes que repiten con nosotros
+      </div>
+    </div>
+  </div>
+</section>

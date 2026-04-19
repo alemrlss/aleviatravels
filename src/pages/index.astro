@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import Destinos from '../components/Destinos.astro';
+import QuienesSomos from '../components/QuienesSomos.astro';
+import PorQueElegirnos from '../components/PorQueElegirnos.astro';
+import Testimonios from '../components/Testimonios.astro';
+import Newsletter from '../components/Newsletter.astro';
+import Contacto from '../components/Contacto.astro';
+import Footer from '../components/Footer.astro';
+import WhatsApp from '../components/WhatsApp.astro';
+---
+
+<Layout
+  title="Alevia Travels — Viajes a Latinoamérica desde España"
+  description="Agencia de viajes en Madrid especializada en Latinoamérica. Colombia, México, Perú, Argentina, Cuba y más. Paquetes personalizados, precios transparentes y atención en español."
+>
+  <Navbar />
+  <main id="main-content">
+    <Hero />
+    <Destinos />
+    <QuienesSomos />
+    <PorQueElegirnos />
+    <Testimonios />
+    <Newsletter />
+    <Contacto />
+  </main>
+  <Footer />
+  <WhatsApp />
+</Layout>
