@@ -25,7 +25,7 @@ const phoneUrl = 'tel:+34600000000';
       <div class="flex flex-col justify-center py-24 lg:py-0 lg:pr-12 xl:pr-20 order-2 lg:order-1">
 
         <!-- Badge animado -->
-        <div class="inline-flex items-center gap-2.5 self-start bg-brand-50 border border-brand-200 rounded-full px-4 py-2 mb-10">
+        <div data-animate data-delay="100" class="inline-flex items-center gap-2.5 self-start bg-brand-50 border border-brand-200 rounded-full px-4 py-2 mb-10">
           <span class="relative flex h-2.5 w-2.5">
             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-400 opacity-60"></span>
             <span class="relative inline-flex h-2.5 w-2.5 rounded-full bg-brand-500"></span>
@@ -34,7 +34,7 @@ const phoneUrl = 'tel:+34600000000';
         </div>
 
         <!-- Headline principal -->
-        <h1 class="font-heading font-extrabold text-charcoal-700 mb-6 tracking-tight" style="font-size: clamp(2.4rem, 5.5vw, 4.5rem); line-height: 1.06;">
+        <h1 data-animate data-delay="220" class="font-heading font-extrabold text-charcoal-700 mb-6 tracking-tight" style="font-size: clamp(2.4rem, 5.5vw, 4.5rem); line-height: 1.06;">
           Viaja a
           <span class="relative inline-block text-brand-500">
             Latinoamérica
@@ -53,12 +53,12 @@ const phoneUrl = 'tel:+34600000000';
         </h1>
 
         <!-- Subtítulo -->
-        <p class="text-lg text-charcoal-400 font-light leading-relaxed max-w-lg mb-10">
+        <p data-animate data-delay="340" class="text-lg text-charcoal-400 font-light leading-relaxed max-w-lg mb-10">
           Vuelos, paquetes y experiencias diseñadas para ti. Atención personalizada en español y precios transparentes desde Madrid.
         </p>
 
         <!-- Trust pills -->
-        <div class="flex flex-wrap gap-2.5 mb-10">
+        <div data-animate data-delay="440" class="flex flex-wrap gap-2.5 mb-10">
           {[
             { label: 'Consulta gratuita', icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>` },
             { label: '500+ viajeros satisfechos', icon: `<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"/>` },
@@ -72,7 +72,7 @@ const phoneUrl = 'tel:+34600000000';
         </div>
 
         <!-- CTAs -->
-        <div class="flex flex-col sm:flex-row gap-3">
+        <div data-animate data-delay="540" class="flex flex-col sm:flex-row gap-3">
           <a
             href={whatsappUrl}
             target="_blank"
@@ -103,7 +103,7 @@ const phoneUrl = 'tel:+34600000000';
       </div>
 
       <!-- ── Columna derecha: imagen ── -->
-      <div class="relative order-1 lg:order-2 flex items-center justify-center lg:justify-end py-10 lg:py-10">
+      <div data-animate="slide-right" data-delay="300" class="relative order-1 lg:order-2 flex items-center justify-center lg:justify-end py-10 lg:py-10">
 
         <!-- Contenedor de imagen -->
         <div class="relative w-full max-w-[420px] lg:max-w-none lg:w-[88%]">
